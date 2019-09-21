@@ -1,0 +1,38 @@
+<body >
+   
+<div class="container">
+    <h1 style="text-align: center; letter-spacing: 3px;text-shadow: 3px 2px skyblue;">New User Info</h1>
+    <div class="row">
+        <div id="one" class="col-lg-6">
+            <form >
+                <div class="form-group">
+                    <label>First Day Of Last Period</label>
+                    <input   style="width: 50%;" type="date" [(ngModel)]="fdlp" name="fdlp" id="fdlp" class="form-control">
+                    
+                </div>
+                <h1></h1>
+                <div class="form-group">
+                    <label>Average Period</label>
+                    <input  style="width: 50%;" type="number" [(ngModel)]="averagePeriod" name="averagePeriod" id="averagePeriod" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Period Interval</label>
+                    <input  style="width: 50%;" type="number" name="periodInterval" [(ngModel)]="periodInterval" id="periodInterval" class="form-control">
+                </div>
+
+                <!-- <div class="form-group">
+                        <label>Last Period Date</label>
+                        <input style="width: 50%;" type="date" name="periodInterval" [(ngModel)]="periodInterval" id="periodInterval" class="form-control">
+                    </div> -->
+                    
+                <button routerLink="./periodDate" class="btn btn-info " (click)="calcPeriodDate()">Next Period Date</button>
+            </form>
+               </div>
+              
+        <div id="two" class="col-lg-6">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+ 
+</body>

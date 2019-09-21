@@ -1,0 +1,27 @@
+button {
+  margin: 5px;
+}
+.container {
+  width: 25%;
+  margin: 0 auto;
+  margin-top: 10%;
+  border: 2px solid skyblue;
+  height: 100%;
+}
+label{
+    letter-spacing: 3px;
+    text-shadow: 3px 2px skyblue;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+/* body{
+  background-image: url('src/assets/images/woman-591576_1920.jpg');
+  background-size:cover; 
+} */
+/* body{
+  width:auto;
+    height: auto;
+    overflow:auto;
+    background-size: cover; 
+     /* height:35em; */
+   

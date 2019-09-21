@@ -1,0 +1,17 @@
+  label{
+      letter-spacing: 3px;
+      text-shadow: 3px 2px skyblue;
+      font-weight: bold;
+      font-variant: small-caps;
+  }
+  #one,#two{
+    margin-top: 5%;
+  }
+  /* body {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-size: cover;
+    background-image: url('src/assets/images/woman-591576_1920.jpg');
+  }
+   */

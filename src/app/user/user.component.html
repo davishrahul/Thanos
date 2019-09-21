@@ -1,0 +1,30 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">            
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <label for="">User</label>            
+            <i class="fa fa-user" aria-hidden="true"></i>            
+            <button id="b1" routerLink="" class="btn btn-default" type="submit">Logout
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </button>            
+        </div>
+        </div>
+      </nav>
+<div class="container">
+    <form [formGroup]="users">
+        <div class="form-group">
+            <label> Last Period Date </label>
+            <input required type="text" formControlName="lastPeriodDate" style="width: 50%;" class="form-control" name="" id="">
+        </div>
+        <div class="form-group">
+            <button [routerLink]="['./nextPeriodDate']" class="btn btn-info">Check Next Period Date</button>
+        </div>
+    </form>
+    <div class="nextPeriod">
+        <router-outlet></router-outlet>
+    </div>
+</div>
